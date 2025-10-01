@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aditi Gaopande | About Me</title>
+<style>
+/* Reset & Base */
+* { box-sizing:border-box; margin:0; padding:0; font-family:'Poppins', sans-serif; }
+body {
+    background: #fdf7f0; /* light luxury cream */
+    color:#333;
+    padding:50px;
+    overflow-x:hidden;
+    position:relative;
+}
+
+/* Top Info - Dark Purple */
+.top-info h1, .top-info h3, .top-info p {
+    color:#4B0082; /* dark purple */
+    text-align:center;
+    margin-bottom:10px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+.top-info h1 { font-size:3em; margin-bottom:5px; }
+.top-info h3 { font-style:italic; margin-bottom:5px; }
+.top-info p { font-size:1.1em; }
+
+/* Cards Titles White */
+.card h2 {
+    color:#fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+p, li { font-size:1.05em; margin-bottom:10px; color:#fff; }
+
+.container { max-width:1000px; margin:auto; padding:20px; position:relative; z-index:2; }
+
+/* Cards with luxury 3D look */
+.card {
+    background: linear-gradient(145deg, #6a0dad, #7b1fa2); /* luxury purple */
+    padding:35px;
+    border-radius:25px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.3), 0 0 20px rgba(106,13,173,0.5);
+    margin-bottom:40px;
+    position:relative;
+    overflow:hidden;
+    transform-style: preserve-3d;
+    transition: transform 0.6s, box-shadow 0.6s;
+}
+.card:hover { transform: translateY(-15px) rotateX(5deg) rotateY(3deg); box-shadow:0 30px 70px rgba(0,0,0,0.5),0 0 30px rgba(106,13,173,0.7); }
+
+ul { padding-left:20px; }
+
+/* 3D Floating Flowers */
+.flower {
+    position:absolute;
+    width:100px;
+    height:100px;
+    background: radial-gradient(circle at 30% 30%, #e6ccff 0%, #6a0dad 80%);
+    border-radius:50%;
+    box-shadow: 0 0 25px rgba(106,13,173,0.7);
+    opacity:0.3;
+    animation: float 15s infinite ease-in-out alternate;
+    z-index:1;
+}
+.flower:nth-child(odd) { animation-duration: 18s; }
+@keyframes float {
+    0% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-40px) rotate(180deg); }
+    100% { transform: translateY(0px) rotate(360deg); }
+}
+
+/* Footer */
+.footer { text-align:center; margin-top:60px; font-size:0.9em; color:#4B0082; text-shadow:1px 1px 2px rgba(0,0,0,0.2); }
+
+</style>
+</head>
+<body>
+
+<!-- 3D Luxury Flowers as decorative elements -->
+<div class="flower" style="top:30px; left:50px;"></div>
+<div class="flower" style="top:100px; left:850px; width:120px; height:120px;"></div>
+<div class="flower" style="top:400px; left:120px; width:90px; height:90px;"></div>
+<div class="flower" style="top:600px; left:650px; width:110px; height:110px;"></div>
+<div class="flower" style="top:300px; left:400px; width:100px; height:100px;"></div>
+<div class="flower" style="top:500px; left:500px; width:70px; height:70px;"></div>
+
+<div class="container">
+    <div class="top-info">
+        <h1>Aditi Gaopande</h1>
+        <h3>Biomedical Engineering | AI Enthusiast | Creative Thinker</h3>
+        <p>Email: aditigaopande50@gmail.com</p>
+    </div>
+
+    <!-- About Me -->
+    <div class="card">
+        <h2>About Me</h2>
+        <p>Hello! I'm Aditi Gaopande, a Biomedical Engineer passionate about AI, creative innovation, and technology that positively impacts healthcare. I strive to merge my technical expertise with creativity, designing projects that are both functional and aesthetically pleasing.</p>
+        <p>Beyond engineering, I am deeply interested in exploring the intersection of science, design, and human experience. I love sketching, music, writing, and experimenting with creative ideas that push boundaries.</p>
+    </div>
+
+    <!-- Academic Background -->
+    <div class="card">
+        <h2>Academic Background</h2>
+        <p>B.Tech in Biomedical Engineering - MGMU-IBT</p>
+        <p>Major Projects:</p>
+        <ul>
+            <li>AI-powered CVD App <strong>(Ongoing)</strong></li>
+            <li>Bionic Eye Study</li>
+            <li>GenoPlot - Gene Visualizer</li>
+            <li>Hand Gesture Recognition Device</li>
+        </ul>
+    </div>
+
+    <!-- Skills & Courses -->
+    <div class="card">
+        <h2>Skills & Courses</h2>
+        <ul>
+            <li>Python Programming</li>
+            <li>SQL</li>
+            <li>R Programming</li>
+            <li>Machine Learning & Deep Learning</li>
+            <li>Dart & Flutter</li>
+            <li>Data Analysis & PowerBI</li>
+        </ul>
+    </div>
+
+    <!-- Creative Side -->
+    <div class="card">
+        <h2>Creative Side</h2>
+        <p>Creativity is a core part of who I am. I enjoy:</p>
+        <ul>
+            <li>Sketching and visual design to create appealing interfaces and innovative ideas.</li>
+            <li>Music: playing piano and curating creative music edits.</li>
+            <li>Writing: exploring ideas and expressing them through structured storytelling.</li>
+            <li>Fashion & Art: designing and conceptualizing unique creations.</li>
+        </ul>
+        <p>These pursuits help me think differently and bring originality to my technical projects.</p>
+    </div>
+
+    <div class="footer">
+        &copy; 2025 Aditi Gaopande | All Rights Reserved
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
+
